@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+    <div id="todo-container">
+        <h1 id="greeting">Welcome to ToDoZen!</h1>
+        <ul id="todo-list" onclick="selectTask(event)"></ul>
+        <input type="text" id="new-task" placeholder="Add a new task">
+        <button onclick="addTask()">ADD</button>
+        <button onclick="reload()">RELOAD</button>
+        <button onclick="logout()">SIGN OUT</button>
+    </div>
+
+    <!-- Modal for editing tasks -->
+    <div id="edit-modal">
+        <label for="edit-task-text">New Task Text:</label>
+        <input type="text" id="edit-task-text">
+        <button onclick="applyEdit()">Apply Edit</button>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+
+</html>
