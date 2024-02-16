@@ -2,4 +2,4 @@
 Electron Interview Test
 
 # Electron Node Modules Installation
-`npm install electron`
+Run `npm install electron`
